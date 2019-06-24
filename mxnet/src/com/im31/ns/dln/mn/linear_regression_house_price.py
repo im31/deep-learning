@@ -124,7 +124,7 @@ for epoch in range(number_of_epochs):
     best_prices = calculate_model_value(features, weights_trainning, bias_trainning)
     loss_trainning = squared_loss(
         calculate_model_value(features, weights_trainning, bias_trainning), prices_example)
-    print('epoch %d, loss_batch %f' % (epoch + 1, loss_trainning.mean().asnumpy()))
+    print('epoch %d, loss %f' % (epoch + 1, loss_trainning.mean().asnumpy()))
 
 print('weights_true ', weights_true)
 print('weights_trainning ', weights_trainning)  
